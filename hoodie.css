@@ -1,0 +1,112 @@
+.contain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 66px; /* space between items */
+    padding: 30px;
+   
+}
+
+.contain div {
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    align-items: center;     /* center image and text horizontally */
+    text-align: center;      /* optional: center text */
+}
+
+  .contain img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #title{
+    padding: 12px;
+    text-align: center;
+  }
+
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-container{
+    width:100%;
+        background-color: #31393b;
+        color:white;
+        padding: 15px 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+
+.nav-container .title-card span{
+    font-size: 45px;
+    color: white;
+}
+
+.nav-container ul{
+    list-style:none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-container ul li{
+    position: relative;
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    color:white;
+    transition: 0.4s ease;
+
+}
+
+.nav-container ul li a:hover{
+  color:black;
+    
+}
+
+
+#shop #dropdown{
+    position: absolute;
+}
+
+#dropdown a{
+    font-size:18px;
+display:none;
+color:black;
+background-color: white;
+padding: 10px 15px;
+text-align:start;
+box-shadow: 2px 2px 5px black;
+min-width: 100px;
+
+}
+
+#shop:hover #dropdown a{
+display:block;
+}
+
+#shop #dropdown a:hover{
+    color: white;
+    background-color: black;
+}
+
+.under {
+    margin-top: 8px;  /* space between image and text */
+    font-size: 14px;
+    color: #333;
+}
+
+
+#white h3{
+padding-top: 30%;
+}
+
+#taupe h3{
+    padding-top: 10%;
+}

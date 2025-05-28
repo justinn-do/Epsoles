@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EPSOLES</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="ep.js"></script>
+
+    </head>
+
+<body>
+<nav class="nav-container">
+
+<div class="title-card">
+   <span>EPSOLES</span> 
+</div>
+<div class="nav-links">
+<ul>
+  <li>  <div id="home"> <a href="http://127.0.0.1:3000/index.html">Home</a> </div> </li>
+
+   <li> <div id="shop"> <a href="#">Shop All</a>
+<div id="dropdown">
+    <a href="hoodie.html">Essentials</a>
+    <a href="#">Shoes</a>
+
+</div>
+
+</div> </li>
+   
+   <li> <div id="about"> <a href="https://www.instagram.com/epsoles/">About Us</a> </div> </li>
+</ul>
+</div>
+
+</nav>
+
+<div id="cover">
+<img src="Epsole.png" alt="Sneaker Sale Event">
+<div class="cover-text">
+    <h1>Elevate your streetwear</h1>
+    <p>Epsoles aims to merge urban fashion with premium comfort. We specialize in handpicked collections of hyped sneakers, like Nike Dunks and Jordans, paired with minimal, quality-crafted apparel including Essentials-style hoodies, sweats, and tees.</p>
+  </div>
+
+
+    
+</div>
+
+<div class="contact-container">
+    <h2>Drop Alert</h2>
+    <p>Be the first to be updated on the latest drops when you sign up.</p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="93697581-6ed5-4457-b75b-c83dccb8d5ac">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email Adderess" required>
+        <textarea name="message" placeholder="Message"></textarea>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+        <button type="submit"><bold>Submit Form</bold></button>
+    
+    </form>
+</div>
+
+ 
+
+    
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-container{
+    width:100%;
+        background-color: #31393b;
+        color:white;
+        padding: 15px 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+
+.nav-container .title-card span{
+    font-size: 45px;
+    color: white;
+}
+
+.nav-container ul{
+    list-style:none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-container ul li{
+    position: relative;
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    color:white;
+    transition: 0.4s ease;
+
+}
+
+.nav-container ul li a:hover{
+  color:black;
+    
+}
+
+
+#shop #dropdown{
+    position: absolute;
+}
+
+#dropdown a{
+    font-size:18px;
+display:none;
+color:black;
+background-color: #fbfbfb;
+padding: 10px 15px;
+text-align:start;
+box-shadow: 2px 2px 5px black;
+min-width: 100px;
+
+}
+
+#shop:hover #dropdown a{
+display:block;
+}
+
+#shop #dropdown a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+#cover {
+    background: black;
+    width: 100%;
+    height: 90vh; /* Fills the full viewport height */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden
+  }
+
+  #cover img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+
+  #cover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    z-index: 2;
+  }
+
+
+  .cover-text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .cover-text h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+
+
+  .cover-text h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    transition: width 0.5s ease;
+  }
+
+  .cover-text h1:hover::after{
+    width: 100%;
+  }
+  
+  
+  .cover-text p {
+    position: absolute;
+    font-size: 20px;
+    width:100%;
+    height:auto;
+    padding: 10px;
+   
+    text-align:center;
+  }
+
+  .contact-container{
+    background-color: black;
+    padding: 40px;
+  }
+
+  .contact-container h2{
+    padding-top: 1%;
+    color:white;
+  }
+
+  .contact-container p{
+    padding-top: 1%;
+    color:white;
+  }
+  
+
+  .contact-container form{
+    align-items: start;
+    justify-content: space-evenly;
+    display: flex;
+ flex-direction: column;
+ gap: 20px;
+ padding-top: 30px;
+
+  }
+
+  .contact-container form input::placeholder{
+    color:white;
+  }
+
+  .contact-container form textarea::placeholder{
+    color:white;
+  }
+
+  .contact-container form input{
+  outline:none;
+background-color:black;
+width:400px;
+height:50px;
+border-color:white;
+padding-left: 15px;
+border-radius: 50px;
+font-weight: 500;
+color:white;
+
+  }
+
+  .contact-container form textarea{
+    outline:none;
+  background-color:black;
+  width:400px;
+  height:50px;
+  border-color:white;
+  padding-left: 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  color:white;
+  padding-top: 1%;
+    }
+
+  .contact-container form button{
+    cursor: pointer;
+    height: 32px;;
+    width:12vh;
+    border-radius: 50px;
+    border-color: white;
+    background-color: black;
+    color:white;
+    font-weight: 100;
+  }
+
+  .contact-container form button:hover{
+    cursor: pointer;
+    height: 32px;;
+    width:12vh;
+    border-radius: 50px;
+    border-color: white;
+    background-color: white;
+    color:black;
+    font-weight: 100;
+    transition: 0.6s ease;
+  }
+
+  
+
+
+
